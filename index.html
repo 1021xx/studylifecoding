@@ -12,6 +12,10 @@
       padding: 0;
     }
 
+    ul {
+      list-style: none;
+    }
+
     h1 {
       text-align: center;
       color: crimson;
@@ -19,42 +23,52 @@
     }
 
     h1 span {
-      color: orangered;
-    }
-
-    h3 {
-      text-align: center;
       color: teal;
-      padding: 30px 0 10px 0;
     }
 
-    ul {
-      margin-bottom: 30px;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
     }
 
-    ul,
-    a {
+    .list {
+      padding-left: 20px;
+      line-height: 2;
+    }
+
+    .list h3 {
+      color: royalblue;
+      font-size: 22px;
+    }
+
+    .list h3:last-of-type {
+      padding-top: 30px;
+      color: crimson;
+    }
+
+    .list a {
       text-decoration: none;
-      text-align: center;
       list-style: none;
       color: brown;
     }
   </style>
 </head>
 
+<!-- 구글 방문자 -->
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K9XNCM1F9"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K9XNCM1F9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-0K9XNCM1F9');
-</script>
+</script> -->
 
 <!-- 채팅기능 -->
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
   (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
@@ -64,36 +78,46 @@
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
   })();
-</script>
+</script> -->
 <!--End of Tawk.to Script-->
 
 <body>
   <h1>12월에 보고싶은 <span>크리스마스</span> 영화 리스트</h1>
-  <h3>디즈니</h3>
-  <ul>
-    <li><a href="https://www.disneyplus.com/ko-kr/movies/tim-burtons-the-nightmare-before-christmas/5GjwOj5Rkpz2">팀버튼의
-        크리스마스 악몽</a></li>
-    <li><a href="https://www.disneyplus.com/ko-kr/movies/home-alone/3v4vqKPG2jSr">나홀로 집에</a></li>
-    <li><a href="https://www.disneyplus.com/ko-kr/movies/beauty-and-the-beast-the-enchanted-christmas/4OcpHSrxMFs0">미녀와
-        야수: 마법의 크리스마스</a></li>
-  </ul>
-  <h3>넷플릭스</h3>
-  <ul>
-    <li><a href="https://www.netflix.com/kr/title/70045854?s=i&trkid=13747225&vlang=ko&clip=81140118">로맨틱 홀리데이</a></li>
-    <li><a href="https://www.netflix.com/kr/title/70202138?s=i&trkid=13747225&vlang=ko&clip=81043709">아더 크리스마스</a></li>
-    <li><a href="https://www.netflix.com/kr/title/60000901?s=i&trkid=13747225&vlang=ko&clip=81025661">그린치</a></li>
-  </ul>
+  <div class="grid">
+    <div class="list">
+      <h3>디즈니</h3>
+      <ul>
+        <li><a
+            href="https://www.disneyplus.com/ko-kr/movies/tim-burtons-the-nightmare-before-christmas/5GjwOj5Rkpz2">팀버튼의
+            크리스마스 악몽</a></li>
+        <li><a href="https://www.disneyplus.com/ko-kr/movies/home-alone/3v4vqKPG2jSr">나홀로 집에</a></li>
+        <li><a
+            href="https://www.disneyplus.com/ko-kr/movies/beauty-and-the-beast-the-enchanted-christmas/4OcpHSrxMFs0">미녀와
+            야수: 마법의 크리스마스</a></li>
+      </ul>
+      <h3>넷플릭스</h3>
+      <ul>
+        <li><a href="https://www.netflix.com/kr/title/70045854?s=i&trkid=13747225&vlang=ko&clip=81140118">로맨틱 홀리데이</a>
+        </li>
+        <li><a href="https://www.netflix.com/kr/title/70202138?s=i&trkid=13747225&vlang=ko&clip=81043709">아더 크리스마스</a>
+        </li>
+        <li><a href="https://www.netflix.com/kr/title/60000901?s=i&trkid=13747225&vlang=ko&clip=81025661">그린치</a></li>
+      </ul>
+    </div>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/rgsStSKIbPI" title="YouTube video player"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rgsStSKIbPI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/VXPNfnHbch4" title="YouTube video player"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VXPNfnHbch4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
 
   <!-- 댓글기능 -->
-  <div id="disqus_thread"></div>
+  <!-- <div id="disqus_thread"></div>
   <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -112,7 +136,7 @@
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-      Disqus.</a></noscript>
+      Disqus.</a></noscript> -->
 
 </body>
 
