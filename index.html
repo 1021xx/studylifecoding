@@ -6,74 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>생활코딩 css</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    a {
-      text-decoration: none;
-      color: #333;
-    }
-
-    h1 {
-      text-align: center;
-      padding: 30px 0;
-      border-bottom: 1px solid #333;
-    }
-
-    h1 span {
-      color: crimson;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      grid-gap: 10px;
-    }
-
-    .list {
-      padding-left: 20px;
-      line-height: 2;
-      border-right: 1px solid #333;
-      padding: 30px;
-    }
-
-    .list h3 {
-      font-size: 22px;
-    }
-
-    .list h3:last-of-type {
-      padding-top: 30px;
-    }
-
-    .video {
-      padding: 30px;
-    }
-
-    @media (min-width:1200px) {
-      body {
-        background-color: red;
-      }
-    }
-
-    @media (max-width:1200px) {
-      body {
-        background-color: blue;
-      }
-    }
-
-    @media (max-width:600px) {
-      body {
-        background-color: orange;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script defer src="main.js"></script>
 </head>
 
 <!-- 구글 방문자 -->
@@ -107,22 +42,25 @@
   <div class="grid">
     <div class="list">
       <h3>디즈니</h3>
-      <ul>
-        <li><a
+      <ul class="color">
+        <li class="color_a"><a
             href="https://www.disneyplus.com/ko-kr/movies/tim-burtons-the-nightmare-before-christmas/5GjwOj5Rkpz2">팀버튼의
             크리스마스 악몽</a></li>
-        <li><a href="https://www.disneyplus.com/ko-kr/movies/home-alone/3v4vqKPG2jSr">나홀로 집에</a></li>
-        <li><a
+        <li class="color_a"><a href="https://www.disneyplus.com/ko-kr/movies/home-alone/3v4vqKPG2jSr">나홀로 집에</a></li>
+        <li class="color_a"><a
             href="https://www.disneyplus.com/ko-kr/movies/beauty-and-the-beast-the-enchanted-christmas/4OcpHSrxMFs0">미녀와
             야수: 마법의 크리스마스</a></li>
       </ul>
       <h3>넷플릭스</h3>
-      <ul>
-        <li><a href="https://www.netflix.com/kr/title/70045854?s=i&trkid=13747225&vlang=ko&clip=81140118">로맨틱 홀리데이</a>
+      <ul class="color">
+        <li class="color_a"><a
+            href="https://www.netflix.com/kr/title/70045854?s=i&trkid=13747225&vlang=ko&clip=81140118">로맨틱 홀리데이</a>
         </li>
-        <li><a href="https://www.netflix.com/kr/title/70202138?s=i&trkid=13747225&vlang=ko&clip=81043709">아더 크리스마스</a>
+        <li class="color_a"><a
+            href="https://www.netflix.com/kr/title/70202138?s=i&trkid=13747225&vlang=ko&clip=81043709">아더 크리스마스</a>
         </li>
-        <li><a href="https://www.netflix.com/kr/title/60000901?s=i&trkid=13747225&vlang=ko&clip=81025661">그린치</a></li>
+        <li class="color_a"><a
+            href="https://www.netflix.com/kr/title/60000901?s=i&trkid=13747225&vlang=ko&clip=81025661">그린치</a></li>
       </ul>
     </div>
 
@@ -135,6 +73,16 @@
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe> -->
     </div>
+
+
+  </div>
+
+
+  <div class="button">
+    <input type="button" value="🌜" onclick="nightDayHandler(this);">
+
+    <input type="button" value="Hi" onclick="alert('안녕하세요!')">
+
   </div>
 
   <!-- 댓글기능 -->

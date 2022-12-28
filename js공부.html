@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js공부</title>
+  <script>
+    const player = {
+      name: 'one',
+      points: 10,
+    };
+    console.log(player);
+
+    player.lastname = 'kim';
+    console.log(player);
+
+    player["level"] = "15";
+    console.log("level : " + player["level"]);
+
+
+    // for (const key in player) {
+    //   // document.write(key + "<br>"); 
+    //   // document.write(player[key] + "<br>");
+    //   document.write(key + ': ' + player[key] + "<br>");
+    // }
+
+    player.showAll = function () {
+      for (const key in this) {
+        console.log(key + ': ' + player[key] + "<br>");
+      }
+    }
+    player.showAll();
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
